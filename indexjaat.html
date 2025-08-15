@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masti Call – Adult VC App</title>
+  <meta name="description" content="Download Masti Call – Free 5-minute nude VC for first-time users. Sexy adult chat app!" />
+  <meta name="keywords" content="Masti Call, adult chat, nude VC, free video call, adult app" />
+  <meta name="author" content="Masti Call" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      font-family: 'Urbanist', sans-serif;
+      height: 100%;
+      background: linear-gradient(-45deg, #ff99cc, #ff66b2, #cc33cc, #9933ff);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .container {
+      max-width: 450px;
+      width: 100%;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+      text-align: center;
+      animation: fadeIn 1.5s ease forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animated-title {
+      font-size: 3em;
+      font-weight: bold;
+      background: linear-gradient(90deg, #fff, #ff99cc, #fff);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 2.5s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+    p {
+      font-size: 1.1em;
+      margin: 15px 0 25px;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+    .download-btn {
+      background-color: #fff;
+      color: #ff3399;
+      border: none;
+      padding: 15px 35px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(255, 51, 153, 0.3);
+      transition: all 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #ffe6f0;
+      transform: scale(1.05);
+    }
+    /* Slider styles */
+    .slider {
+      position: relative;
+      margin: 20px 0;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slides img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 18px;
+      border: none;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+    @media (max-width: 500px) {
+      .animated-title { font-size: 2.4em; }
+      .download-btn { padding: 12px 25px; font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="animated-title">Masti Call</div>
+    <p>🔥 Hottest Indian girl desi bhabhi<br>
+    💋 Get instant nude video calls. First 5 mins FREE. No signup.</p>
+
+    <!-- Image Slider -->
+    <div class="slider">
+      <div class="slides" id="slides">
+        <img src="https://i.postimg.cc/sXC1KQk4/IMG-20240405-172430.jpg" alt="Model 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBYqCHu_pa-nq148WAwR5H7kOVray7Ra2FkKv6wtFcLtHVc5tWbVCdZFShC6wUyR7pIIQ&usqp=CAU" alt="Model 2">
+        <img src="https://thumbs.justindianporn.info/000/520/520043/520043.webp" alt="Model 3">
+        <img src="https://masafun.one/wp-content/uploads/auto-draft-410.jpg" alt="Model 4">
+        <img src="https://eximage.cyou/Super%20Horny%20Indian%20Girl.jpg" alt="Model 5">
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <button class="download-btn" onclick="downloadApp()">Download Now</button>
+  </div>
+
+  <script>
+    let index = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+
+    function showSlide(i) {
+      index = (i + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    function moveSlide(step) {
+      showSlide(index + step);
+    }
+
+    function autoSlide() {
+      moveSlide(1);
+    }
+
+    setInterval(autoSlide, 3000); // auto-change every 3 seconds
+    showSlide(index);
+
+    function downloadApp() {
+      window.location.href = "https://github.com/puravaai/apk/releases/download/apk/Masti.Calls.apk";
+    }
+  </script>
+
+</body>
+</html>
